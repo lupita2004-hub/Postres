@@ -1,0 +1,169 @@
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.4;
+  background: #fff;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffe6f0;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #b30059;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #b30059;
+}
+
+/* Imagen destacada */
+.hero {
+  width: 100%;
+  height: 300px;
+  background: url('img/hero_postres.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.hero h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedores */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Filtros */
+.filtros {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filtros button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background: #ff7eb9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.filtros button:hover {
+  background: #ff4da6;
+}
+
+/* Buscador */
+.busqueda {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.busqueda input {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.galeria article {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.galeria article:hover {
+  transform: translateY(-5px);
+}
+
+.galeria img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.galeria p {
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Sección "Nosotros" */
+.info {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 2rem;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.info p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background: #ffe6f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer .info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 10px 0;
+}
