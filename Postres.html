@@ -1,142 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Postres</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Postres | Las Girls</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-    	<h1>POSTRES</h1>
-    	<h3><i>🍭Endulza tu día con cada bocado...🍭</i></h3>
-    	<p>
-        	Los postres son más que un antojo, son un momento especial.  
-        	Aquí encontrarás una selección de <strong>delicias horneadas, dulces y fritas</strong>  
-        	que harán sonreír a cualquiera.
-    	</p>
-</header>
+  <!-- Encabezado -->
+  <header>
+    <div class="logo">🍰 Postres Las Girls</div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#postres">Postres</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Postres Horneados</h2>
-            <div class="galeria">
-                <article>
-                    <img src="img/pastel_chocolate.jpg" alt="Pastel de chocolate">
-                    <p>Pastel de Chocolate</p>
-                </article>
-                <article>
-                    <img src="img/galletas.jpg" alt="Galletas caseras">
-                    <p>Galletas Caseras</p>
-                </article>
-                <article>
-                    <img src="img/pie_manzana.jpg" alt="Pay de manzana">
-                    <p>Pay de Manzana</p>
-                </article>
-                <article>
-                    <img src="img/cupcakes.jpg" alt="Cupcakes decorados">
-                    <p>Cupcakes</p>
-                </article>
-                <article>
-                    <img src="img/brownies.jpg" alt="Brownies">
-                    <p>Brownies</p>
-                </article>
-                <article>
-                    <img src="img/panques.jpg" alt="Panqués">
-                    <p>Panqués</p>
-                </article>
-                <article>
-                    <img src="img/tarta_fresa.jpg" alt="Tarta de fresa">
-                    <p>Tarta de Fresa</p>
-                </article>
-                <article>
-                    <img src="img/roles_canela.jpg" alt="Roles de canela">
-                    <p>Roles de Canela</p>
-                </article>
-                <article>
-                    <img src="img/cheesecake.jpg" alt="Cheesecake">
-                    <p>Cheesecake</p>
-                </article>
-            </div>
-        </section>
+  <!-- Imagen Hero -->
+  <section class="hero" id="inicio">
+    <h2>Endulza tu día con cada bocado...</h2>
+  </section>
 
-        <section>
-            <h2>Dulces</h2>
-            <div class="galeria">
-                <article>
-            		<img src="img/caramelos.png" alt="Caramelos">
-            		<p>Caramelos de sabores</p>
-        	    </article>
-        	    <article>
-            		<img src="img/chocolate.png" alt="Chocolate artesanal">
-            		<p>Chocolate Artesanal</p>
-        	    </article>
-        	    <article>
-            		<img src="img/paletas.png" alt="Paleta de dulce">
-            		<p>Paletas de Dulce</p>
-        	    </article>
-        	    <article>
-            		<img src="img/malvaviscos.png" alt="Malvaviscos">
-            		<p>Malvaviscos suaves</p>
-        	    </article>
-        	    <article>
-            		<img src="img/gomitas.png" alt="Gomitas de colores">
-            		<p>Gomitas de colores</p>
-        	    </article>
-        	    <article>
-            		<img src="img/alfajor.png" alt="Alfajores">
-            		<p>Alfajores dulces</p>
-        	    </article>
-		        <article>
-            		<img src="img/macarons.png" alt="Macarons franceses">
-            		<p>Macarons</p>
-        	    </article>
-        	    <article>
-            		<img src="img/cake pops.png" alt="Cake pops">
-            		<p>Cake Pops</p>
-        	    </article>
-        	    <article>
-            		<img src="img/mazapan.png" alt="Mazapán">
-            		<p>Mazapán</p>
-        	    </article>
-            </div>
-        </section>
+  <!-- Filtros -->
+  <div class="container filtros">
+    <button data-filter="all">Todos</button>
+    <button data-filter="horneado">Horneados</button>
+    <button data-filter="dulce">Dulces</button>
+    <button data-filter="frito">Fritos</button>
+  </div>
 
-        <section>
-            <h2>Postres Fritos</h2>
-            <div class="galeria">
-                <article>
-            		<img src="img/churros.jpg" alt="Churros">
-            		<p>Churros con cajeta</p>
-        	    </article>
-        	    <article>
-            		<img src="img/empanadas.jpg" alt="Empanadas dulces">
-            		<p>Empanadas con rellenos dulces </p>
-        	    </article>
-        	    <article>
-            		<img src="img/platanos.jpg" alt="Platanos fritos">
-            		<p>Platanos fritos con lechera </p>
-        	    </article>
-        	    <article>
-            		<img src="img/donas.jpg" alt="Donas">
-            		<p>Donitas azucaradas</p>
-        	    </article>
-        	    <article>
-            		<img src="img/bunuelos.jpg" alt="Buñuelos">
-            		<p>Buñuelos bañados en miel de guayaba </p>
-        	    </article>
-                <article>
-            		<img src="img/toast.jpg" alt="Pan frances">
-            		<p>Pan Francés </p>
-        	    </article>
-            </div>
-        </section>
-    </main>
+  <!-- Buscador -->
+  <div class="container busqueda">
+    <input type="text" id="buscador" placeholder="Buscar postre...">
+  </div>
 
-    <footer>
-        <p>Postres las Girls</p>
-       <p>Los mas deliciosos>
-   </footer>
+  <!-- Galería -->
+  <main class="container" id="postres">
+    <div class="galeria">
+
+      <!-- Horneados -->
+      <article class="horneado">
+        <img src="img/pastel_chocolate.jpg" alt="Pastel de Chocolate">
+        <p>Pastel de Chocolate</p>
+      </article>
+      <article class="horneado">
+        <img src="img/galletas.jpg" alt="Galletas Caseras">
+        <p>Galletas Caseras</p>
+      </article>
+      <article class="horneado">
+        <img src="img/pie_manzana.jpg" alt="Pay de Manzana">
+        <p>Pay de Manzana</p>
+      </article>
+      <article class="horneado">
+        <img src="img/cupcakes.jpg" alt="Cupcakes decorados">
+        <p>Cupcakes</p>
+      </article>
+      <article class="horneado">
+        <img src="img/brownies.jpg" alt="Brownies">
+        <p>Brownies</p>
+      </article>
+      <article class="horneado">
+        <img src="img/panques.jpg" alt="Panqués">
+        <p>Panqués</p>
+      </article>
+      <article class="horneado">
+        <img src="img/tarta_fresa.jpg" alt="Tarta de Fresa">
+        <p>Tarta de Fresa</p>
+      </article>
+      <article class="horneado">
+        <img src="img/roles_canela.jpg" alt="Roles de Canela">
+        <p>Roles de Canela</p>
+      </article>
+      <article class="horneado">
+        <img src="img/cheesecake.jpg" alt="Cheesecake">
+        <p>Cheesecake</p>
+      </article>
+
+      <!-- Dulces -->
+      <article class="dulce">
+        <img src="img/caramelos.png" alt="Caramelos de sabores">
+        <p>Caramelos de sabores</p>
+      </article>
+      <article class="dulce">
+        <img src="img/chocolate.png" alt="Chocolate artesanal">
+        <p>Chocolate Artesanal</p>
+      </article>
+      <article class="dulce">
+        <img src="img/paletas.png" alt="Paletas de Dulce">
+        <p>Paletas de Dulce</p>
+      </article>
+      <article class="dulce">
+        <img src="img/malvaviscos.png" alt="Malvaviscos">
+        <p>Malvaviscos suaves</p>
+      </article>
+      <article class="dulce">
+        <img src="img/gomitas.png" alt="Gomitas de colores">
+        <p>Gomitas de colores</p>
+      </article>
+      <article class="dulce">
+        <img src="img/alfajor.png" alt="Alfajores">
+        <p>Alfajores dulces</p>
+      </article>
+      <article class="dulce">
+        <img src="img/macarons.png" alt="Macarons">
+        <p>Macarons</p>
+      </article>
+      <article class="dulce">
+        <img src="img/cake pops.png" alt="Cake Pops">
+        <p>Cake Pops</p>
+      </article>
+      <article class="dulce">
+        <img src="img/mazapan.png" alt="Mazapán">
+        <p>Mazapán</p>
+      </article>
+
+      <!-- Fritos -->
+      <article class="frito">
+        <img src="img/churros.jpg" alt="Churros">
+        <p>Churros con cajeta</p>
+      </article>
+      <article class="frito">
+        <img src="img/empanadas.jpg" alt="Empanadas dulces">
+        <p>Empanadas con rellenos dulces</p>
+      </article>
+      <article class="frito">
+        <img src="img/platanos.jpg" alt="Plátanos fritos">
+        <p>Plátanos fritos con lechera</p>
+      </article>
+      <article class="frito">
+        <img src="img/donas.jpg" alt="Donas">
+        <p>Donitas azucaradas</p>
+      </article>
+      <article class="frito">
+        <img src="img/bunuelos.jpg" alt="Buñuelos">
+        <p>Buñuelos bañados en miel de guayaba</p>
+      </article>
+      <article class="frito">
+        <img src="img/toast.jpg" alt="Pan Francés">
+        <p>Pan Francés</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Nosotros -->
+  <section class="info" id="nosotros">
+    <h3>¿Quiénes somos?</h3>
+    <p>
+      Horneamos con cariño, utilizamos ingredientes de calidad,  
+      y nos esforzamos por ver sonrisas en quienes nos eligen.  
+      Estamos aquí para endulzar tus momentos.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <div class="container info">
+      <p>&copy; 2025 Postres Las Girls | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Script filtros y buscador -->
+  <script>
+    // Filtros
+    const buttons = document.querySelectorAll('.filtros button');
+    const items = document.querySelectorAll('.galeria article');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        items.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Buscador
+    document.getElementById('buscador').addEventListener('keyup', function() {
+      const value = this.value.toLowerCase();
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(value) ? 'block' : 'none';
+      });
+    });
+  </script>
 </body>
 </html>
 
