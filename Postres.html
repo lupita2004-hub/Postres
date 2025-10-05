@@ -5,7 +5,9 @@
   <title>Postres | Las Girls</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
   <!-- Encabezado -->
   <header>
@@ -21,9 +23,13 @@
   </header>
 
   <!-- Imagen Hero -->
-  <section class="hero" id="inicio">
-    <h2>Endulza tu día con cada bocado...</h2>
-  </section>
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <h1>Postres que enamoran 🍓</h1>
+    <p>Horneados, dulces y artesanales, listos para endulzar tu día.</p>
+    <a href="#postres" class="btn-hero">Ver galería</a>
+  </div>
+</section>
 
   <!-- Filtros -->
   <div class="container filtros">
@@ -163,34 +169,15 @@
     </div>
   </footer>
 
-  <!-- Script filtros y buscador -->
-  <script>
-    // Filtros
-    const buttons = document.querySelectorAll('.filtros button');
-    const items = document.querySelectorAll('.galeria article');
-
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        const filter = button.getAttribute('data-filter');
-        items.forEach(item => {
-          if (filter === 'all' || item.classList.contains(filter)) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      });
-    });
-
-    // Buscador
-    document.getElementById('buscador').addEventListener('keyup', function() {
-      const value = this.value.toLowerCase();
-      items.forEach(item => {
-        const text = item.textContent.toLowerCase();
-        item.style.display = text.includes(value) ? 'block' : 'none';
-      });
-    });
-  </script>
+  <!-- Modal (oculto por defecto) -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="cerrar">&times;</span>
+      <img id="modal-img" src="" alt="Imagen del postre">
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+  
 </body>
 </html>
-
